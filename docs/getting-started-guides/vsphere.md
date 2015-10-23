@@ -120,6 +120,13 @@ deployment works just as any other one!
 
 **Enjoy!**
 
+### Tearing down the cluster
+```sh
+cd kubernetes # Extracted binary release OR repository root
+export KUBERNETES_PROVIDER=vsphere
+cluster/kube-down.sh
+```
+
 ### Extra: debugging deployment failure
 
 The output of `kube-up.sh` displays the IP addresses of the VMs it deploys. You
